@@ -1,0 +1,12 @@
+# eth0 = L2 domain C
+# 10.0.2.0/24
+ip addr add 10.0.2.40/24 dev eth0
+ip link set dev eth0 up
+
+# eth0 = L2 domain D
+# 10.0.3.0/24
+ip addr add 10.0.3.40/24 dev eth1
+ip link set dev eth1 up
+
+# start FRR
+/etc/init.d/frr start

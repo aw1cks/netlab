@@ -1,0 +1,8 @@
+# eth0 = L2 domain L
+# rt4 <-> rt5
+# 100.2.0.0/30
+ip addr add 100.2.0.2/30 dev eth0
+ip link set dev eth0 up
+
+# Start FRR
+/etc/init.d/frr start

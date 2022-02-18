@@ -1,0 +1,4 @@
+rt5: rt4 rt3 rt2 rt1
+rt4: rt3 rt2 rt1
+rt3: rt2 rt1
+rt2: rt1
